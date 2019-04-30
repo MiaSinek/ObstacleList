@@ -1,0 +1,46 @@
+<link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
+rel='stylesheet' type='text/css'>
+<div class="bg-holder">
+  <div class="wrapper">
+    <div class="h1-holder">
+      <h1>OBSTACLE</h1>
+      <h1>LIST</h1>
+    </div>
+    <div class="login">
+      <div class="heading">
+
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="input-group input-group-lg">
+
+            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control", placeholder: "Username or email" %>
+
+          </div>
+
+          <div class="input-group input-group-lg">
+            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+            <%= f.password_field :password, autocomplete: "current-password", class: "form-control", placeholder: "Password" %>
+          </div>
+
+          <div class="authentication-links">
+            <a href="/users/password/new">Forgot your password?</a><br>
+          </div>
+
+          <%# if devise_mapping.rememberable? >
+            <div class="form-check-box">
+              <%= f.check_box :remember_me >
+              <%= f.label :remember_me c>
+            </div>
+          <% end %>
+
+          <div class="actions">
+            <%= f.submit "Log in", :class => "float login" %>
+          </div>
+        <% end %>
+
+      </div>
+      <div class="authentication-links">
+        <a href="/users/sign_up">Sign up</a>
+      </div>
+  </div>
+</div>
