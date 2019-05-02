@@ -1,0 +1,86 @@
+@import url(https://use.fontawesome.com/releases/v5.8.1/css/all.css);
+
+$almost-black: #050b0f;
+$eerie-black: #161c20;
+$charade: #282d31;
+$charcoal-grey: #3a3f42;
+$abbey: #4c5053;
+$storm-dust: #5e6264;
+$sonic-silver: #707375;
+$gunsmoke: #828587;
+$mountain-mist: #939698;
+$gray: #a5a7a9;
+$deep-loblolly: #b7b9ba;
+$iron: #c9cacb;
+$gainsboro: #dbdcdc;
+$gallery: #ededed;
+$white: #ffffff;
+$default-light: #e5f5f9;
+
+.navbar {
+  display: flex;
+  // align-items: flex-end;
+  padding: 16px;
+  color: $default-light;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.navbar-sitename {
+  font-size: 18px;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: flex-end;
+}
+
+.navbar-link {
+  padding-right: 16px;
+
+}
+
+.navbar-link-toggle {
+  display: none;
+}
+
+.ni-right {
+  margin-left: auto;
+}
+
+//For laterz when I figure out the svg mistery
+//.nav-icon {
+//   -moz-osx-font-smoothing: grayscale;
+//   -webkit-font-smoothing: antialiased;
+//   display: inline-block;
+//   font-style: normal;
+//   font-variant: normal;
+//   text-rendering: auto;
+//   line-height: 1;
+//   fill: $charcoal-grey;
+// }
+
+@media only screen and (max-width: 768px) {
+  .navbar-items,
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-items {
+    display: none;
+  }
+  .ni-right {
+    margin-left: 0;
+  }
+
+  .navbar-toggle-show {
+    display: flex;
+  }
+
+  .navbar-link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
