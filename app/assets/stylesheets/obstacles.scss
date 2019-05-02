@@ -1,3 +1,54 @@
-.foss {
-  color: palegoldenrod;
+$wip: #FF473A; //rgba(186, 73, 6, 1.00);
+$default-light: #e5f5f9;
+
+.obst-status {
+  min-height: 50px;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  color: $default-light;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 300;
+  margin-bottom: 0;
+  max-width: 904px;
+  margin: auto;
+}
+
+.wip {
+  background: $wip;
+}
+
+.center {
+  align-self: center;
+}
+
+.article-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.article-content {
+  background-color: $default-light;
+  padding: 50px;
+  line-height: 1.6;
+  max-width: 904px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.article-title {
+  color: #14151f;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.article-subheading {
+  color: $wip;
+  font-size: 24px;
+  margin: 40px 0px 15px 0px;
 }

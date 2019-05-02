@@ -15,7 +15,9 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow: hidden;
+  // overflow: hidden;
+  // TODO: the above line makes the scrollbar disappear - at the present state this causes the scrolling to break,
+  // something to fix in the future
   height: 100%;
 }
 
@@ -2775,7 +2777,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
   border: 1px solid transparent;
 }
 @media (min-width:768px) {
