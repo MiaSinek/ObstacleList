@@ -1,5 +1,83 @@
-$wip: #FF473A; //rgba(186, 73, 6, 1.00);
+/**********************************
+Variables
+***********************************/
+
+$bg-color: #272729;
+$h-color: #272727;
+$wip: #FF473A;
 $default-light: #e5f5f9;
+$mountain-mist: #939698;
+$iron: #c9cacb;
+$dark-title: #14151f;
+$knocked-down :#009688;
+$on-my-radar: #FFC107;
+
+/**********************************
+General
+***********************************/
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.cards-content {
+  display: flex;
+  background: $default-light;
+  width: 100%;
+  max-width: 904px;
+  flex-wrap: wrap;
+  overflow-wrap: normal;
+  padding: 40px 0px;
+}
+
+.card {
+	display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  max-width: 400px;
+	-webkit-box-shadow: 0px 16px 6px -6px rgba(39,39,41,0.6);
+	-moz-box-shadow: 0px 16px 6px -6px rgba(39,39,41,0.6);
+  box-shadow: 0px 16px 6px -6px rgba(39,39,41,0.6);
+  border: solid 1px $iron;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 250px;
+  background: url('/assets/polip-bottom.png') no-repeat;
+  background-size: contain;
+
+}
+.card-title {
+  color: $wip;
+  font-size: 30px;
+  font-weight: 500;
+  font: "Lalezan";
+}
+
+.card-status {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  color: $default-light;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin: auto;
+  width: 100%;
+  padding: 8px;
+}
 
 .obst-status {
   min-height: 50px;
@@ -9,15 +87,41 @@ $default-light: #e5f5f9;
   justify-content: center;
   color: $default-light;
   text-transform: capitalize;
-  font-size: 22px;
-  font-weight: 300;
+  font-size: 25px;
+  font-weight: 500;
   margin-bottom: 0;
   max-width: 904px;
   margin: auto;
 }
 
+.short-desc {
+  padding: 20px 10px 10px 15px;
+}
+
+// status colors
+
 .wip {
   background: $wip;
+}
+
+.wip-text {
+  color: $wip;
+}
+
+.kd {
+  background: $knocked-down;
+}
+
+.kd-text {
+  color: $knocked-down;
+}
+
+.omr {
+  background: $on-my-radar;
+}
+
+.omr-text {
+  color: $on-my-radar;
 }
 
 .center {
@@ -41,7 +145,7 @@ $default-light: #e5f5f9;
 
 
 .article-title {
-  color: #14151f;
+  color: $dark-title;
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -51,4 +155,27 @@ $default-light: #e5f5f9;
   color: $wip;
   font-size: 24px;
   margin: 40px 0px 15px 0px;
+}
+
+//******************************
+
+//  Home Page
+
+//******************************
+
+.home-page-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  color: $default-light;
+  max-width: 904px;
+  margin: auto;
+
+}
+
+.front-page-xl-title {
+  line-height: 6.2em;
+  font-size: 6em;
+}
+
+.definition {
+
 }
